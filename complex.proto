@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+message Thing {
+  string one = 1;
+  string two = 2;
+  uint32 three = 3;
+  uint32 four = 4;
+  uint64 five = 5;
+  uint64 six = 6;
+
+  enum ThingOptions {
+    UNKNOWN = 0;
+    TEST = 1;
+  }
+  ThingOptions seven = 7;
+  ThingOptions eight = 8;
+
+  repeated Thing more = 9;
+}

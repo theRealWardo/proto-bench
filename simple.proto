@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message SimpleString {
+  string one = 1;
+}
+
+message SimpleInt {
+  uint32 one = 1;
+}
+
+message SimpleBigInt {
+  uint64 one = 1;
+}
+
+message SimpleEnum {
+  enum SimpleOptions {
+    UNKNOWN = 0;
+    TEST = 1;
+  }
+  SimpleOptions one = 1;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+message TwoString {
+  string one = 1;
+  string two = 2;
+}
+
+message TwoInt {
+  uint32 one = 1;
+  uint32 two = 2;
+}
+
+message TwoBigInt {
+  uint64 one = 1;
+  uint64 two = 2;
+}
+
+message TwoEnum {
+  enum TwoOptions {
+    UNKNOWN = 0;
+    TEST = 1;
+  }
+  TwoOptions one = 1;
+  TwoOptions two = 2;
+}
